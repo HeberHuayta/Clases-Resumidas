@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase III</title>
+</head>
+<body>
+
+    <h1> Programacion Web </h1>
+
+    <br>
+
+    <h2> Clase III </h2>
+
+    <article>
+
+        <h3> Codigo base </h3>
+
+        <p>El codigo base se realiza con ! + (enter)</p>
+
+        <img src="./Imagenes/codigo base.png" alt="imagen de codigo base">
+
+    </article>
+
+
+
+
+    <article>
+
+        <h3> ¿Quien es alt? </h3>
+
+        <p>alt es un atributo de la etiqueta &lt; img &gt;</p>
+
+        <img src="./Imagenes/alt.png" alt="Definicion de alt">
+
+    </article>
+
+
+
+
+    <article>
+
+        <h3> &lt; video &gt; </h3>
+
+        <p>Sirve para un insertar video</p>
+
+        <video src="./Videos/Repo.mp4" controls width="560px"></video>
+
+
+        <h4> Atributos </h4>
+
+        <ul>
+            <li>controls ( Muestra los controles del reproductor -play, pausa, volumen- )</li>
+            <li>autoplay ( El video se reproduce automáticamente )</li>
+            <li>muted ( El video empieza sin sonido )</li>
+            <li>loop ( Cuando termina, vuelve a empezar automáticamente )</li>
+        </ul>
+
+        <p>
+            <span style="color: red;">Atencion! </span> En muchos navegadores -loop- solo funciona si también está muteado, de lo contrario el video sera bloqueado 
+        </p>
+
+    </article>
+
+
+
+
+    <article>
+
+        <h3> &lt; iframe &gt; </h3>
+
+        <p>Sirve para insertar otra pagina web dentro de tu pagina web</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IxX_QHay02M?si=nRoO9GDYLyqlcJQJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </article>
+
+
+
+
+    <article>
+
+        <h3> &lt; span &gt;</h3>
+
+        <p>Sirve para marcar una parte pequeña de texto dentro de un párrafo, título o cualquier contenido, para después aplicarle estilo o identificarlo</p>
+
+        <p>
+            <span style="color:fuchsia;"> -------------Soy un span-------------</span>
+        </p>
+
+        <img src="./Imagenes/span.png" alt="codigo de span">
+
+    </article>
+
+
+
+
+    <article>
+
+        <h3> &lt; ol &gt; y &lt; ul &gt; </h3>
+
+        <p>Ambos sirven para crear listas ordenadas &lt; ol &gt; y desordenadas &lt; ul &gt; </p>
+
+        <h4> Lista Ordenada </h4>
+
+        <ol>
+            <li>soy</li>
+            <li>una</li>
+            <li>lista</li>
+            <li>ordenada</li>
+        </ol>
+
+        <p>
+            <span style="color: blue;">Dato:</span> usando -type- como atributo de &lt; ol &gt; podes cambiar el tipo de enumeracion (1. 2. 3. 4.) 
+        </p>
+
+
+        <h4> Lista Desordenada </h4>
+
+        <ul>
+            <li>soy</li>
+            <li>una</li>
+            <li>lista</li>
+            <li>desordenada</li>
+        </ul>
+
+        <img src="./Imagenes/li.png" alt="listas">
+
+    </article>
+
+
+
+
+    <article>
+
+        <h3> &lt; form &gt; </h3>
+
+        <p>Sirve para crear formularios</p>
+
+
+        <section>
+
+            <h4> Formulario Simple </h4>
+
+            <form>
+                <input>
+            </form>
+
+            <br>
+
+            <img src="./Imagenes/form solo input.png" alt="solo input">
+
+        </section>
+
+
+        <section>
+
+            <h4> Formulario Simple Con Nombre </h4>
+
+            <form>
+                <label> Nombre: </label>
+                <input type="text">
+            </form>
+
+            <br>
+
+            <img src="./Imagenes/form con name.png" alt="form con nombre">
+
+        </section>
+
+
+        <section>
+
+            <h4> Formulario Simple Con Nombre Bien Hecho </h4>
+
+            <form>
+                <label for="id-de-nombre"> Nombre: </label>
+                <input id="id-de-nombre">
+            </form>
+
+            <br>
+
+            <img src="./Imagenes/form con id.png" alt="form con id" width="490px">
+
+            <p>De esta manera el label esta conectado con el input, lo podes verificar haciendo click en "Nombre:"</p>
+
+        </section>
+
+
+        <section>
+
+            <h4> Formulario Simple Con Nombre Bien Hecho Obligatorio y Con Submit </h4>
+
+            <form>
+                <label for="id-de-nombre"> Nombre: </label>
+                <input id="id-de-nombre" required>
+                
+                <button type="submit"> Enviar </button>
+            </form>
+
+            <br>
+
+            <img src="./Imagenes/form obligatorio.png" alt="form obligatorio">
+
+            <p>required: sirve para no dejar que el formulario se envie vacio</p>
+
+            <p>type="submit": le da la funcion de "submit"(enviar) a button</p>
+
+        </section>
+
+        <br>
+
+        <section>
+
+            <h4> Formulario Simple Con Atributo -name- </h4>
+
+            <p>-name- el atributo mas importante de &lt; form &gt;, este es el nombre con el que se envía el dato </p>
+
+            <form>
+                <label for="id-de-nombre"> Nombre: </label>
+                <input id="id-de-nombre" required name="nombre-de-usuario">
+                
+                <button type="submit"> Enviar </button>
+            </form>
+
+            <br>
+
+            <img src="./Imagenes/form name.png" alt="form con name">
+
+        </section>
+            
+
+        <section>
+
+            <h4> Otros Tipos De Form </h4>
+
+            <P>Por defecto &lt; input &gt; es type="text", estos son otros tipos de input:</P>
+
+            <form>
+
+                <label> Email: </label>
+                <input type="email">
+
+                <br>
+
+                <label> Contraseña: </label>
+                <input type="password">
+
+                <br>
+
+                <label> Numero: </label>
+                <input type="number">
+
+                <br>
+
+                <label> Fecha: </label>
+                <input type="date">
+
+                <br>
+
+                <label> Hora: </label>
+                <input type="time">
+
+                <br>
+
+                <label> Archivo: </label>
+                <input type="file">
+
+                <br>
+
+                <label> Color: </label>
+                <input type="color">
+
+                <br>
+
+                <label> Opciones: </label>
+                <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+
+                <br>
+
+                <label> Opcion: </label>
+                <input type="radio" name="opcion" value="1">
+                <input type="radio" name="opcion" value="2">
+                <input type="radio" name="opcion" value="3">
+
+                <br>
+
+                <label> Ni idea: </label>
+                <input type="range" min="0" max="100">
+
+                <br>
+
+                <label> Url: </label>
+                <input type="url">
+
+            </form>
+
+            <style>
+                 label {
+                     display: inline-block;
+                        width: 80px;    /* mismo ancho para todos los labels */
+                        margin-bottom: 8px;
+                    }
+            </style>
+
+        </section>
+        
+
+    </article>
+
+</body>
+</html>
